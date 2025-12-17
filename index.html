@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JM Tropa da Jamaica</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{
+  min-height:100vh;
+  background:radial-gradient(circle at center,#0f5b41 0%,#03140f 55%,#000 100%);
+  color:#eafff4;
+}
+
+/* ===== PÁGINAS ===== */
+.page{display:none;min-height:100vh}
+.page.active{display:block}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero-card{
+  width:92%;
+  max-width:1150px;
+  background:#041a14;
+  border-radius:45px;
+  padding:90px 40px;
+  text-align:center;
+  box-shadow:
+    0 0 60px rgba(57,255,156,.35),
+    0 0 120px rgba(57,255,156,.45),
+    inset 0 0 80px rgba(57,255,156,.08);
+}
+.hero-card h1{
+  color:#39ff9c;
+  font-size:58px;
+  letter-spacing:3px;
+  text-shadow:
+    0 0 15px rgba(57,255,156,.6),
+    0 0 35px rgba(57,255,156,.9),
+    0 0 65px rgba(57,255,156,.8);
+}
+.hero-card p{
+  margin:22px 0 45px;
+  font-size:18px;
+  opacity:.9;
+}
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+.hero-buttons button,.hero-buttons a{
+  padding:20px 46px;
+  border-radius:45px;
+  border:none;
+  background:#39ff9c;
+  color:#002015;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+  text-decoration:none;
+  box-shadow:
+    0 0 20px rgba(57,255,156,.7),
+    0 0 50px rgba(57,255,156,.9);
+  transition:.2s;
+}
+.hero-buttons button:hover,.hero-buttons a:hover{transform:scale(1.08)}
+
+section{padding:80px 8%}
+section h2{text-align:center;color:#39ff9c;margin-bottom:45px;text-shadow:0 0 20px rgba(57,255,156,.7)}
+
+/* ===== BENEFÍCIOS / REQUISITOS ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
+.box{
+  background:#05261c;
+  border-radius:22px;
+  padding:22px;
+  text-align:center;
+  box-shadow:
+    0 0 25px rgba(0,0,0,.7),
+    inset 0 0 25px rgba(57,255,156,.12);
+}
+.box p{font-size:14px;line-height:1.6}
+
+/* ===== FORM ===== */
+form{
+  max-width:950px;
+  margin:0 auto;
+  background:#041a14;
+  padding:45px;
+  border-radius:35px;
+  box-shadow:
+    0 0 60px rgba(0,0,0,.7),
+    0 0 90px rgba(57,255,156,.25);
+}
+label{display:block;margin-top:18px;font-weight:bold}
+input,textarea{
+  width:100%;
+  margin-top:8px;
+  padding:14px;
+  border-radius:14px;
+  border:none;
+}
+textarea{min-height:90px}
+button.submit{
+  margin-top:30px;
+  width:100%;
+  padding:18px;
+  border-radius:40px;
+  border:none;
+  background:#39ff9c;
+  color:#002015;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 0 40px rgba(57,255,156,.8);
+}
+
+/* ===== RESPOSTAS ===== */
+#respostas{margin-top:70px}
+.resposta{
+  background:#05261c;
+  padding:35px;
+  border-radius:30px;
+  margin-bottom:35px;
+  box-shadow:0 0 35px rgba(0,0,0,.8);
+}
+.resposta h3{color:#39ff9c;margin-bottom:18px}
+.resposta p{margin:8px 0;font-size:14px}
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1 - BEM VINDO -->
+<div class="page active" id="home">
+  <div class="hero">
+    <div class="hero-card">
+      <h1>JM TROPA DA JAMAICA</h1>
+      <p>Família, organização e respeito</p>
+      <div class="hero-buttons">
+        <button onclick="irPara('site')">Entrar no Site</button>
+        <a href="https://discord.gg/SEU_DISCORD" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PÁGINA 2 - SITE -->
+<div class="page" id="site">
+
+<section>
+<h2>Benefícios</h2>
+<div class="grid">
+  <div class="box"><p>Facção sempre ativa</p></div>
+  <div class="box"><p>Sorteios de veículos raros</p></div>
+  <div class="box"><p>Produção própria de armas e itens</p></div>
+  <div class="box"><p>Uniforme exclusivo jamaicano</p></div>
+  <div class="box"><p>Ações organizadas e constantes</p></div>
+  <div class="box"><p>Chance de cargos por mérito</p></div>
+</div>
+</section>
+
+<section>
+<h2>Requisitos</h2>
+<div class="grid">
+  <div class="box"><p>Saber regras de RP</p></div>
+  <div class="box"><p>Conhecer normas de ação</p></div>
+  <div class="box"><p>Respeitar regras do Discord</p></div>
+  <div class="box"><p>Ser ativo na cidade</p></div>
+  <div class="box"><p>Ser leal e comprometido</p></div>
+</div>
+</section>
+
+<section>
+<h2>Formulário</h2>
+<form onsubmit="enviar(event)">
+  <label>Nick no jogo</label><input id="nick" required>
+  <label>Nome</label><input id="nome" required>
+  <label>Discord</label><input id="discord" required>
+  <label>O que é RDM e VDM?</label><textarea id="rdm" required></textarea>
+  <label>O que é CL?</label><textarea id="cl" required></textarea>
+  <label>O que é Dark RP?</label><textarea id="dark" required></textarea>
+  <label>O que é Anti RP?</label><textarea id="anti" required></textarea>
+  <label>O que é Combat Log?</label><textarea id="combat" required></textarea>
+  <label>Se um policial abordar, o que você faz?</label><textarea id="abordagem" required></textarea>
+  <label>Idade</label><input id="idade" required>
+  <label>Há quanto tempo joga RP?</label><input id="tempo" required>
+  <label>Já participou de alguma facção?</label><input id="faccao" required>
+  <label>Por que quer entrar?</label><textarea id="motivo" required></textarea>
+  <label>O que pode agregar?</label><textarea id="agregar" required></textarea>
+  <label>Estilo de RP</label><textarea id="estilo" required></textarea>
+  <label>Como reage a ordens?</label><textarea id="ordem" required></textarea>
+  <label>Se morrer em ação, o que faz?</label><textarea id="morte" required></textarea>
+  <label>Dias e horários</label><input id="dias" required>
+  <label>Possui Discord e microfone?</label><input id="mic" required>
+  <label>Quanto tempo pretende ficar?</label><input id="permanencia" required>
+  <label>Algo a mais</label><textarea id="extra"></textarea>
+  <button class="submit">Enviar</button>
+</form>
+
+<div id="respostas"></div>
+</section>
+
+</div>
+
+<script>
+function irPara(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function enviar(e){
+  e.preventDefault();
+  const html=`<div class="resposta">
+    <h3>${nick.value}</h3>
+    <p><b>Nick:</b> ${nick.value}</p>
+    <p><b>Nome:</b> ${nome.value}</p>
+    <p><b>Discord:</b> ${discord.value}</p>
+    <p><b>RDM/VDM:</b> ${rdm.value}</p>
+    <p><b>CL:</b> ${cl.value}</p>
+    <p><b>Dark RP:</b> ${dark.value}</p>
+    <p><b>Anti RP:</b> ${anti.value}</p>
+    <p><b>Combat Log:</b> ${combat.value}</p>
+    <p><b>Abordagem policial:</b> ${abordagem.value}</p>
+    <p><b>Idade:</b> ${idade.value}</p>
+    <p><b>Tempo RP:</b> ${tempo.value}</p>
+    <p><b>Facção anterior:</b> ${faccao.value}</p>
+    <p><b>Motivo:</b> ${motivo.value}</p>
+    <p><b>Agrega:</b> ${agregar.value}</p>
+    <p><b>Estilo RP:</b> ${estilo.value}</p>
+    <p><b>Ordens:</b> ${ordem.value}</p>
+    <p><b>Após morrer:</b> ${morte.value}</p>
+    <p><b>Dias/Horários:</b> ${dias.value}</p>
+    <p><b>Discord/Microfone:</b> ${mic.value}</p>
+    <p><b>Permanência:</b> ${permanencia.value}</p>
+    <p><b>Extra:</b> ${extra.value}</p>
+  </div>`;
+  respostas.innerHTML = html + respostas.innerHTML;
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>
